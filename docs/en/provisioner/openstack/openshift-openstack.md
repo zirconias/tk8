@@ -199,13 +199,13 @@ ansible-playbook -i /openshift-ansible/inventory/hosts.ini ./openshift-ansible/p
 
 If everything goes fine, you should see an output like the one below:
 
-![output](images/openshift-ansibleOutput.png)
+![output](/docs/images/openshift-ansibleOutput.png)
 
 ## Post-Installation
 
 1; Check the status of the Openshift cluster:
 
-![status](images/openshift-clusterstatus.png)
+![status](/docs/images/openshift-clusterstatus.png)
 
 2; Generate admin username/password \(this will be done on the master node\) that will be used to access the webpage:
 
