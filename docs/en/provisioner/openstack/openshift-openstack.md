@@ -25,7 +25,7 @@ If name resolution fails, the installation will fail along the way.
 
 ## Reference Architecture
 
-![openshift-openstack-arch](images/openshift-openstack-arch.jpg)
+![openshift-openstack-arch](/docs/images/openshift-openstack-arch.jpg)
 
 **N.B**: The number of actual virtual machines will be different based on the final design architecture, the above is given as an example.
 
@@ -91,23 +91,23 @@ terraform apply -var-file=cluster.tfvars
 
 Successful output should be similar to snapshot below :
 
-![output](images/openshift-output-snapsnot.png)
+![output](/docs/images/openshift-output-snapsnot.png)
 
-![instances](images/openshift-instances.png)
+![instances](/docs/images/openshift-instances.png)
 
-![loadbalancer](images/openshift-loadbalancer.png)
+![loadbalancer](/docs/images/openshift-loadbalancer.png)
 
 7; Ensure you are able to resolve all the node hostnames to their respective private IPs, the DNS solution is dependent on your specific environment.
 
-![dns](images/openshift-dns.png)
+![dns](/docs/images/openshift-dns.png)
 
 On your DNS, configure the master FQDN to resolve to the public IP of the master LB. Sample resolution is given below:
 
-![masterfqdn](images/openshift-masterFQDN.png)
+![masterfqdn](/docs/images/openshift-masterFQDN.png)
 
 Also configure application URL endpoint FQDN to resolve to the public IP of the infrastructure node LB. Sample resolution is given below:
 
-![appurl](images/openshift-appURL.png)
+![appurl](/docs/images/openshift-appURL.png)
 
 ## Openshift Origin Installation
 
